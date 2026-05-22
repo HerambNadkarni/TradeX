@@ -1,0 +1,50 @@
+<!-- Paste into Supabase Dashboard → Authentication → Email Templates → Magic Link -->
+<!-- Subject line (set in dashboard): Your TradeX verification code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeX Verification</title>
+</head>
+<body style="margin:0;padding:0;background:#0c0c12;font-family:'Segoe UI',system-ui,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#0c0c12;padding:40px 16px;">
+    <tr>
+      <td align="center">
+        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:#12121a;border:1px solid rgba(255,255,255,0.08);border-radius:16px;overflow:hidden;">
+          <tr>
+            <td style="padding:32px 32px 16px;text-align:center;background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(45,212,191,0.05));">
+              <p style="margin:0;font-size:28px;font-weight:800;color:#34d399;letter-spacing:-0.5px;">TradeX</p>
+              <p style="margin:8px 0 0;font-size:13px;color:#71717a;">Virtual Stock Trading Game</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px 32px;">
+              <h1 style="margin:0 0 12px;font-size:22px;font-weight:700;color:#fafafa;">Verify your email</h1>
+              <p style="margin:0 0 24px;font-size:15px;line-height:1.6;color:#a1a1aa;">
+                Use this one-time code to finish creating your TradeX account and start trading with $100,000 in virtual cash.
+              </p>
+              <div style="text-align:center;margin:28px 0;">
+                <p style="margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Your 6-digit code</p>
+                <p style="margin:0;font-size:36px;font-weight:800;letter-spacing:0.35em;color:#34d399;font-family:'Courier New',monospace;">{{ .Token }}</p>
+              </div>
+              <p style="margin:24px 0 0;font-size:13px;line-height:1.5;color:#71717a;">
+                This code expires in 1 hour. If you didn&apos;t sign up for TradeX, you can ignore this email.
+              </p>
+              <p style="margin:16px 0 0;font-size:12px;color:#52525b;">
+                Do not share this code with anyone. TradeX will never ask for your password by email.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px 32px;border-top:1px solid rgba(255,255,255,0.06);text-align:center;">
+              <p style="margin:0;font-size:11px;color:#52525b;">© TradeX · Paper trading only · No real money</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
