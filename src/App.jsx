@@ -89,11 +89,13 @@ function App() {
           <Sidebar />
           <div className="flex-1 flex flex-col min-w-0">
             <Navbar />
-            <main className="flex-1 px-4 sm:px-6 md:px-8 lg:px-10 py-6 md:py-8 pb-24 lg:pb-8 max-w-[1600px]">
-              
-              <AppRoutes />
-              <Footer />
-            </main>
+            <main className="flex-1 flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 py-6 md:py-8 max-w-[1600px] min-h-screen">
+  <div className="flex-1">
+    <AppRoutes />
+  </div>
+
+  <Footer />
+</main>
             
           </div>
         </div>
