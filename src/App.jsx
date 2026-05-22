@@ -90,9 +90,10 @@ function App() {
           <div className="flex-1 flex flex-col min-w-0">
             <Navbar />
             <main className="flex-1 px-4 sm:px-6 md:px-8 lg:px-10 py-6 md:py-8 pb-24 lg:pb-8 max-w-[1600px]">
-              <Footer />
+              
               <AppRoutes />
             </main>
+            <Footer />
           </div>
         </div>
       </BrowserRouter>
