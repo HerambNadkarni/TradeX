@@ -27,11 +27,7 @@ export default function AuthLayout({ children, title, subtitle, view }) {
               {view === "signup" || view === "verify-otp"
                 ? "Start your trading career"
                 : "Welcome back, trader"}
-                
             </h2>
-            <p className="text-zinc-400 mt-2">
-  Created by Heramb Nadkarni ⚡
-</p>
             <p className="auth-hero-desc">
               {view === "signup" || view === "verify-otp"
                 ? "Create an account, verify your email, and compete to grow your net worth from Intern to Wall Street Legend."
